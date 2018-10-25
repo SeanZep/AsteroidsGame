@@ -7,4 +7,8 @@ public void draw()
 {
   one.show();
 }
-
+public void keyPressed(){
+	if(key == 'w'){
+		
+	}
+}
