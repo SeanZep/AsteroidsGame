@@ -5,10 +5,14 @@ public void setup()
 }
 public void draw() 
 {
+  background(192);
   one.show();
 }
 public void keyPressed(){
-	if(key == 'w'){
-		
+	if(key == 'd'){
+		one.setPointDirection((int)one.getPointDirection() + 10);
+	}
+	if(key == 'a'){
+		one.setPointDirection((int)one.getPointDirection() - 10);
 	}
 }
