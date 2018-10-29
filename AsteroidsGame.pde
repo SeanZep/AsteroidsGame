@@ -15,4 +15,7 @@ public void keyPressed(){
 	if(key == 'a'){
 		one.setPointDirection((int)one.getPointDirection() - 10);
 	}
+	if(key == 'w'){
+		one.setDirectionX(one.getDirectionX()+10);
+	}
 }
