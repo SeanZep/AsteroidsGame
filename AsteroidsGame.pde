@@ -1,12 +1,19 @@
 Spaceship one = new Spaceship();
+Star[] stars = new Star[50];
 public void setup() 
 {
   size(400, 400);
+  for(int i = 0; i<stars.length; i++){
+  	stars[i] = new Star();
+  }
 }
 public void draw() 
 {
-  background(192);
+  background(0);
   one.move();
+  for(int i = 0; i<stars.length; i++){
+   	stars[i].show();
+  }
   one.show();
 }
 public void keyPressed(){
