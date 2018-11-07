@@ -72,7 +72,9 @@ class Spaceship extends Floater
     endShape(CLOSE);
     if(key == 'w'){
     	stroke(255, 0, 0);
-    	line(-10, 8, -7, 0);
+    	strokeWeight(4);
+    	line(-15, 8, -12, 0);
+    	line(-15, -8, -12, 0);
     }
 
     //"unrotate" and "untranslate" in reverse order
