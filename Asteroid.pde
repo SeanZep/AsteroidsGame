@@ -1,23 +1,23 @@
 class Asteroid extends Floater{
 	private int rotation, speedX, speedY;
 	public Asteroid(){
-		rotation = (int)(Math.random()*5)-2;
+		rotation = (int)(Math.random()*5-2);
 		while(rotation == 0)
 			rotation = (int)(Math.random()*5)-2;
-		speedX = (int)(Math.random()*5)-2;
-		speedY = (int)(Math.random()*5)-2;
+		speedX = (int)(Math.random()*5-2);
+		speedY = (int)(Math.random()*5-2);
 		while(speedX == 0 && speedY == 0){
-			speedX = (int)(Math.random()*5)-2;
-			speedY = (int)(Math.random()*5)-2;
+			speedX = (int)(Math.random()*5-2);
+			speedY = (int)(Math.random()*5-2);
 		}
 
 		corners = 4;
 		xCorners = new int[corners];
 		yCorners = new int[corners];
-		xCorners[0] = -8;
-		yCorners[0] = -8;
-		xCorners[1] = -5;
-		yCorners[1] = 0;
+		xCorners[0] = (int)(Math.random()*5-10);
+		yCorners[0] = (int)(Math.random()*5-10);
+		xCorners[1] = (int)(Math.random()*5-10);
+		yCorners[1] = (int)(Math.random()*4-2);
 		xCorners[2] = -8;
 		yCorners[2] = 8;
 		xCorners[3] = 16;
