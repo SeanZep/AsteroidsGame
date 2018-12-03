@@ -11,20 +11,22 @@ class Asteroid extends Floater{
 			speedY = (int)(Math.random()*5-2);
 		}
 
-		corners = 4;
+		corners = 5;
 		xCorners = new int[corners];
 		yCorners = new int[corners];
 		xCorners[0] = (int)(Math.random()*5-10);
 		yCorners[0] = (int)(Math.random()*5-10);
 		xCorners[1] = (int)(Math.random()*5-10);
 		yCorners[1] = (int)(Math.random()*5+6);
-		xCorners[2] = -8;
-		yCorners[2] = 8;
-		xCorners[3] = 16;
-		yCorners[3] = 0;
+		xCorners[2] = 0;
+		yCorners[2] = (int)(Math.random()*5+6);
+		xCorners[3] = (int)(Math.random()*5+6);
+		yCorners[3] = (int)(Math.random()*5+6);
+		xCorners[4] = (int)(Math.random()*5+6);
+		yCorners[4] = (int)(Math.random()*5-10);
 		myColor = color(255, 200, 100);
 		myCenterX = (int)(Math.random()*400);
-		myCenterY = (int)(Math.random()*400);;
+		myCenterY = (int)(Math.random()*400);
 		myDirectionX = 0;
 		myDirectionY = 0;
 		myPointDirection = 180;
