@@ -3,8 +3,12 @@ class Bullet extends Floater{
 		myCenterX = x.getX();
 		myCenterY = x.getY();
 		myPointDirection = x.getPointDirection()*(Math.PI/180);
-		myDirectionX = 5*Math.cos(myPointDirection)+x.getDirectionX();
-		myDirectionY = 5*Math.cos(myPointDirection)+x.getDirectionY();
+		myDirectionX = 5*Math.cos(myPointDirection);
+		myDirectionY = 5*Math.cos(myPointDirection);
+	}
+	public void move(){
+		myCenterX += myDirectionX;    
+    	myCenterY += myDirectionY;     
 	}
 	public void show(){
 		ellipse((float)myCenterX, (float)myCenterY, 2, 2);

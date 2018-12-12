@@ -28,8 +28,9 @@ public void draw()
   		asteroids.remove(i);
   	}
   }
-  if(bullets.size()>0){
-  	bullets.get(0).show();
+  for(int i=0; i<bullets.size(); i++){
+  	bullets.get(i).move();
+  	bullets.get(i).show();
   }
 }
 public void keyPressed(){
