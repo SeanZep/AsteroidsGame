@@ -31,7 +31,19 @@ public void draw()
   for(int i=0; i<bullets.size(); i++){
   	bullets.get(i).move();
   	bullets.get(i).show();
+  	if(bullets.get(i).getX() > width){
+  		bullets.remove(i);
+  	}else if(bullets.get(i).getX() < 0){
+  		bullets.remove(i);
+  		break;
+  	}
+  	if(bullets.get(i).getY() > height){
+  		bullets.remove(i);
+  	}else if(bullets.get(i).getY() < 0){
+  		bullets.remove(i);
+  	}
   }
+  System.out.println(bullets.size());
 }
 public void keyPressed(){
 	if(key == 'd'){
