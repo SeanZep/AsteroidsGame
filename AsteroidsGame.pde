@@ -66,7 +66,7 @@ public void keyPressed(){
 		one.setX((int)(Math.random()*400));
 		one.setY((int)(Math.random()*400));
 	}
-	if(key == 'c'){
+	if(key == ' '){
 		bullets.add(new Bullet(one));
 	}
 }
